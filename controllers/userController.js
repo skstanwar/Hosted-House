@@ -46,7 +46,7 @@ const login = async (req, res) => {
     }
     const user_id = req.body.credentialId;
     const datafetch = await credential.findOne({user_id:req.body.credentialId});
-    console.log(datafetch);
+    // console.log(datafetch);
    if(datafetch!=null){
     req.session.IsAuth=true;
     res.send({message:"You are logged in",
