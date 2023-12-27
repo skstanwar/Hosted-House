@@ -1,0 +1,27 @@
+{
+  "name": "weather-app-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "author": "sanjay Kumar Saini",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@passwordless-id/webauthn": "^1.2.4",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "nodemailer": "^6.9.3",
+    "path": "^0.12.7",
+    "url": "^0.11.1"
+  }
+}

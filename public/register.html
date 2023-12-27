@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/register.css">
+   
+
+</head>
+<body>
+  <div class="container">
+    <div id="login-box">
+      <div class="logo">
+        <img src="http://placehold.it/100x100?text=DD" class="img img-responsive img-circle center-block"/>
+        <h1 class="logo-caption"><span class="tweak">R</span>egistration</h1>
+      </div><!-- /.logo -->
+      <div class="controls">
+        <input type="text" name="username" placeholder="Username" id="Register" class="form-control" />
+        <button type="button" class="btn btn-default btn-block btn-custom" id="Rid">Register</button>
+        <button type="button" class="btn btn-default btn-block btn-custom" ><a href="/login">login</a></button>
+
+      </div>
+    </div>
+  </div>
+  <div id="particles-js"></div>
+  <!-- partial -->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'></script>
+  <script src='https://code.jquery.com/jquery-1.11.1.min.js'></script><script  src="js/script.js"></script>
+  
+    
+  <script type="module">
+    import{ Rgs} from './js/register.js';
+    const temp= document.getElementById('Rid'); 
+    temp.addEventListener('click',Rgs);
+</script>
+</body>
+</html>
