@@ -9,7 +9,7 @@ const challange = async (req, res) => {
 const register = async (req, res) => {
     const expected = {
         challenge: "a7c61ef9-dc23-4806-b486-2428938a547e",
-        origin: "https://host-house.onrender.com/",
+        origin: "https://host-house.onrender.com",
     }
     const datafetch = await credential.findOne({username:req.body.username});
     // console.log(datafetch)
@@ -41,7 +41,7 @@ const register = async (req, res) => {
 const login = async (req, res) => {
     const expected = {
         challenge: "a7c61ef9-dc23-4806-b486-2428938a547e",
-        origin: "https://host-house.onrender.com/",
+        origin: "https://host-house.onrender.com",
         userVerified: true  
     }
     const user_id = req.body.credentialId;

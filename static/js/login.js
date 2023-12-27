@@ -20,7 +20,7 @@ async function trigger(){
       })
       const data = await response2.json();
       if(data.tag){
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "/";
       }
       else alert("Login Failled");;
      }
