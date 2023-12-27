@@ -9,10 +9,10 @@ const challange = async (req, res) => {
 const register = async (req, res) => {
     const expected = {
         challenge: "a7c61ef9-dc23-4806-b486-2428938a547e",
-        origin: "http://localhost:3000",
+        origin: "https://host-house.onrender.com/",
     }
     const datafetch = await credential.findOne({username:req.body.username});
-    console.log(datafetch)
+    // console.log(datafetch)
     if(datafetch==null){
     try {
         const registrationParsed = await server.verifyRegistration(req.body.registration, expected)
@@ -41,7 +41,7 @@ const register = async (req, res) => {
 const login = async (req, res) => {
     const expected = {
         challenge: "a7c61ef9-dc23-4806-b486-2428938a547e",
-        origin: "http://localhost:3000",
+        origin: "https://host-house.onrender.com/",
         userVerified: true  
     }
     const user_id = req.body.credentialId;
